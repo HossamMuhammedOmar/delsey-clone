@@ -1,13 +1,165 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>DELSEY Header Clone</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="bg-amber-100 h-[200vh]">
+    <div
+      class="bg-cover bg-top h-[100vh] bg-[url('./assets/hero.jpeg')]"
+    >
+      <!-- Banner -->
+      <div id="target-tag" class="bg-black px-10 py-[7px] w-full">
+        <p
+          class="text-white text-[13px] font-bold text-center tracking-wide"
+        >
+          Delsey Clone
+        </p>
+      </div>
+
+      <header class="sticky top-0 right-0">
+        <nav
+          role="navigation"
+          aria-label="Navigation menu"
+          class="bg-[#eff0f0] px-10 flex justify-between items-center"
+        >
+          <ul id="nav-list" class="flex gap-[10px]">
+            <!-- <li> DONE WITH JS </li> -->
+          </ul>
+          <div class="flex gap-2 items-center">
+            <a class="link" href="#">-20% Student Discount</a>
+            <ul id="social-list" class="flex items-center gap-3">
+              <!-- <li> DONE WITH JS </li> -->
+            </ul>
+          </div>
+        </nav>
+
+        <div
+          id="logo-section"
+          class="w-full flex px-10 pt-[30px] pb-4 items-center bg-transparent ease duration-200 relative z-30"
+        >
+          <div class="flex-1 flex items-center">
+            <button
+              id="toggle-menu-btn"
+              class="flex-col flex invisible gap-[5px] cursor-pointer py-4 px-5 translate-x-6 transition-transform duration-200 ease-[cubic-bezier(.18,.77,.58,1)]"
+            >
+              <div class="w-5 h-[1.45px] bg-black"></div>
+              <div class="w-4 h-[1.45px] bg-black"></div>
+              <div class="w-5 h-[1.45px] bg-black"></div>
+            </button>
+
+            <form
+              id="search"
+              class="bg-white rounded-[40px] flex w-64 relative py-[2px] transition-transform ease duration-200 translate-x-[-40px]"
+            >
+              <input
+                placeholder="Search..."
+                type="text"
+                class="outline-none rounded-[40px] rounded-r py-[7px] px-[10px] text-sm placeholder:text-[#d6d6d6]"
+              />
+              <button
+                class="absolute bottom-[6px] right-[10px] px-1"
+                aria-label="Search Button"
+              >
+                <img
+                  src="./assets/search.svg"
+                  aria-hidden="true"
+                  class="w-[28px]"
+                  alt=""
+                />
+              </button>
+            </form>
+          </div>
+
+          <div class="flex justify-center flex-[2]">
+            <a href="#">
+              <img
+                id="logo"
+                src="./assets/logo.avif"
+                alt="Website logo"
+                class="w-[280px]"
+              />
+            </a>
+          </div>
+
+          <div class="flex flex-1 justify-end">
+            <a
+              href="#"
+              class="text-[12px] tracking-[0.2em] text-white flex gap-[15px] items-center"
+            >
+              <img
+                id="card-icon"
+                src="./assets/cart.svg"
+                alt=""
+                aria-hidden="true"
+                class="w-[26px] text-white"
+              />
+              <p id="card-txt">CART (0)</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- MEGA MENU -->
+        <ul
+          id="mega-menu-wrapper"
+          class="flex items-center justify-center pt-2 bg-transparent ease-[cubic-bezier(.18,.77,.58,1)] duration-300"
+        >
+          <li>
+            <a
+              class="mega-item text-[12px] py-4 px-5 tracking-[0.2em] text-white inline-block"
+              href="#"
+              >LUGGAGE</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="mega-item text-[12px] py-4 px-5 tracking-[0.2em] text-white inline-block"
+              href="#"
+              >BAGS AND BACKPACKS</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="mega-item text-[12px] py-4 px-5 tracking-[0.2em] text-white inline-block"
+              href="#"
+              >ACCESSORIES</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="mega-item text-[12px] py-4 px-5 tracking-[0.2em] text-white inline-block"
+              href="#"
+              >COLLECTIONS</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="mega-item text-[12px] py-4 px-5 tracking-[0.2em] text-white inline-block"
+              href="#"
+              >ABOUT DELSEY</a
+            >
+          </li>
+        </ul>
+      </header>
+    </div>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
