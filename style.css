@@ -71,12 +71,39 @@ h6 {
   overflow-wrap: break-word;
 }
 
+.hover-li:hover div {
+  visibility: visible;
+}
+
+.mega-list:hover + .absolute,
+.mega-list:focus-visible + .absolute {
+  visibility: visible;
+}
+
+.mega-list:hover .drop-aimation {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
 @layer components {
   .link {
     @apply py-3 px-[15px] inline-block text-[13px] cursor-pointer hover:underline;
   }
 
+  .mega-link {
+    @apply py-[3px] inline-block text-[13px] cursor-pointer hover:underline;
+  }
+
+  .mega-heading-link {
+    @apply text-[1rem] font-[700] pb-1 cursor-pointer hover:underline tracking-wider;
+  }
+
   .search-border {
     @apply border border-black;
+  }
+
+  .mega-list {
+    @apply hover-li hover:bg-white hover:text-black text-white flex flex-col items-center;
   }
 }

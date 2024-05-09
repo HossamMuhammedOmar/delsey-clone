@@ -17,148 +17,323 @@
     />
     <title>DELSEY Header Clone</title>
   </head>
-  <body class="bg-amber-100 h-[200vh]">
+  <body class="bg-amber-100 relative h-auto">
+    <img
+      class="h-[100vh] object-cover w-full absolute z-0"
+      src="./assets/hero.jpeg"
+    />
+    <!-- Banner -->
     <div
-      class="bg-cover bg-top h-[100vh] bg-[url('./assets/hero.jpeg')]"
+      id="target-tag"
+      class="bg-black px-10 py-[7px] w-full relative"
     >
-      <!-- Banner -->
-      <div id="target-tag" class="bg-black px-10 py-[7px] w-full">
-        <p
-          class="text-white text-[13px] font-bold text-center tracking-wide"
-        >
-          Delsey Clone
-        </p>
-      </div>
+      <p
+        class="text-white text-[13px] font-bold text-center tracking-wide"
+      >
+        Delsey Clone
+      </p>
+    </div>
 
-      <header class="sticky top-0 right-0">
-        <nav
-          role="navigation"
-          aria-label="Navigation menu"
-          class="bg-[#eff0f0] px-10 flex justify-between items-center"
-        >
-          <ul id="nav-list" class="flex gap-[10px]">
+    <header class="sticky top-0 w-full z-50">
+      <nav
+        role="navigation"
+        aria-label="Navigation menu"
+        class="bg-[#eff0f0] px-10 flex justify-between items-center"
+      >
+        <ul id="nav-list" class="flex gap-[10px]">
+          <!-- <li> DONE WITH JS </li> -->
+        </ul>
+        <div class="flex gap-2 items-center">
+          <a class="link" href="#">-20% Student Discount</a>
+          <ul id="social-list" class="flex items-center gap-3">
             <!-- <li> DONE WITH JS </li> -->
           </ul>
-          <div class="flex gap-2 items-center">
-            <a class="link" href="#">-20% Student Discount</a>
-            <ul id="social-list" class="flex items-center gap-3">
-              <!-- <li> DONE WITH JS </li> -->
-            </ul>
-          </div>
-        </nav>
+        </div>
+      </nav>
 
-        <div
-          id="logo-section"
-          class="w-full flex px-10 pt-[30px] pb-4 items-center bg-transparent ease duration-200 relative z-30"
-        >
-          <div class="flex-1 flex items-center">
+      <div
+        id="logo-section"
+        class="w-full flex px-10 pt-[30px] pb-4 items-center bg-transparent ease duration-200 relative z-30"
+      >
+        <div class="flex-1 flex items-center">
+          <!-- Toggle nav menu button -->
+          <button
+            id="toggle-menu-btn"
+            class="flex-col flex invisible gap-[5px] cursor-pointer py-4 px-5 translate-x-6 transition-transform duration-200 ease-[cubic-bezier(.18,.77,.58,1)]"
+          >
+            <div
+              id="toggle-top-icon"
+              class="w-5 h-[1.45px] bg-black origin-left transition-transform duration-200 ease-[cubic-bezier(.18,.77,.58,1)]"
+            ></div>
+            <div
+              id="toggle-middle-icon"
+              class="w-4 h-[1.45px] bg-black transition-opacity duration-300 ease-[cubic-bezier(.18,.77,.58,1)]"
+            ></div>
+            <div
+              id="toggle-bottom-icon"
+              class="w-5 h-[1.45px] bg-black origin-left transition-transform duration-200 ease-[cubic-bezier(.18,.77,.58,1)]"
+            ></div>
+          </button>
+
+          <form
+            id="search"
+            class="bg-white rounded-[40px] flex w-64 relative py-[2px] transition-transform ease duration-200 translate-x-[-40px]"
+          >
+            <input
+              placeholder="Search..."
+              type="text"
+              class="outline-none rounded-[40px] rounded-r py-[7px] px-[10px] text-sm placeholder:text-[#d6d6d6]"
+            />
             <button
-              id="toggle-menu-btn"
-              class="flex-col flex invisible gap-[5px] cursor-pointer py-4 px-5 translate-x-6 transition-transform duration-200 ease-[cubic-bezier(.18,.77,.58,1)]"
-            >
-              <div class="w-5 h-[1.45px] bg-black"></div>
-              <div class="w-4 h-[1.45px] bg-black"></div>
-              <div class="w-5 h-[1.45px] bg-black"></div>
-            </button>
-
-            <form
-              id="search"
-              class="bg-white rounded-[40px] flex w-64 relative py-[2px] transition-transform ease duration-200 translate-x-[-40px]"
-            >
-              <input
-                placeholder="Search..."
-                type="text"
-                class="outline-none rounded-[40px] rounded-r py-[7px] px-[10px] text-sm placeholder:text-[#d6d6d6]"
-              />
-              <button
-                class="absolute bottom-[6px] right-[10px] px-1"
-                aria-label="Search Button"
-              >
-                <img
-                  src="./assets/search.svg"
-                  aria-hidden="true"
-                  class="w-[28px]"
-                  alt=""
-                />
-              </button>
-            </form>
-          </div>
-
-          <div class="flex justify-center flex-[2]">
-            <a href="#">
-              <img
-                id="logo"
-                src="./assets/logo.avif"
-                alt="Website logo"
-                class="w-[280px]"
-              />
-            </a>
-          </div>
-
-          <div class="flex flex-1 justify-end">
-            <a
-              href="#"
-              class="text-[12px] tracking-[0.2em] text-white flex gap-[15px] items-center"
+              class="absolute bottom-[6px] right-[10px] px-1"
+              aria-label="Search Button"
             >
               <img
-                id="card-icon"
-                src="./assets/cart.svg"
-                alt=""
+                src="./assets/search.svg"
                 aria-hidden="true"
-                class="w-[26px] text-white"
+                class="w-[28px]"
+                alt=""
               />
-              <p id="card-txt">CART (0)</p>
-            </a>
-          </div>
+            </button>
+          </form>
         </div>
 
-        <!-- MEGA MENU -->
-        <ul
-          id="mega-menu-wrapper"
-          class="flex items-center justify-center pt-2 bg-transparent ease-[cubic-bezier(.18,.77,.58,1)] duration-300"
+        <div class="flex justify-center flex-[2]">
+          <a href="#">
+            <img
+              id="logo"
+              src="./assets/logo.avif"
+              alt="Website logo"
+              class="w-[280px]"
+            />
+          </a>
+        </div>
+
+        <div class="flex flex-1 justify-end">
+          <a
+            href="#"
+            class="text-[12px] tracking-[0.2em] text-white flex gap-[15px] items-center"
+          >
+            <img
+              id="card-icon"
+              src="./assets/cart.svg"
+              alt=""
+              aria-hidden="true"
+              class="w-[26px] text-white"
+            />
+            <p id="card-txt">CART (0)</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- MEGA MENU -->
+      <ul
+        id="mega-menu-wrapper"
+        class="flex items-center justify-center pt-2 bg-transparent ease-[cubic-bezier(.18,.77,.58,1)] duration-300 relative"
+      >
+        <li tabindex="-1" class="mega-list" id="mega-list-1">
+          <button
+            class="mega-item text-[12px] py-4 px-5 tracking-[0.2em] inline-block"
+          >
+            LUGGAGE
+          </button>
+          <div class="bg-black w-[70%] h-[2px] invisible"></div>
+
+          <!-- Dropdown -->
+          <div
+            tabindex="-1"
+            id="dropdown"
+            class="absolute w-full bg-white top-[60px] right-0 invisible shadow-lg p-10"
+          >
+            <div
+              class="flex gap-[10%] translate-y-[-14px] opacity-0 invisible transition duration-400 ease-[cubic-bezier(.18,.77,.58,1)] drop-aimation"
+            >
+              <div class="flex flex-col pr-10">
+                <a href="#" class="mega-heading-link">Luggages</a>
+                <a href="#" class="mega-link">Carry-on</a>
+                <a href="#" class="mega-link">Suitcases</a>
+                <a href="#" class="mega-link">Trunk</a>
+                <a href="#" class="mega-link">Sets</a>
+                <a href="#" class="mega-link">Iconic Luggages</a>
+                <a href="#" class="mega-link">Best-sellers</a>
+              </div>
+
+              <div class="flex flex-col pr-10">
+                <a href="#" class="mega-heading-link">Materials</a>
+                <a href="#" class="mega-link">Hardside</a>
+                <a href="#" class="mega-link">Softside</a>
+              </div>
+
+              <div class="flex flex-col pr-10">
+                <a href="#" class="mega-heading-link"
+                  >Duration of stay</a
+                >
+                <a href="#" class="mega-link">Week-end</a>
+                <a href="#" class="mega-link">1 week</a>
+                <a href="#" class="mega-link">+ 2 weeks</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="mega-list">
+          <button
+            class="mega-item text-[12px] py-4 px-5 tracking-[0.2em] inline-block"
+          >
+            BAGS AND BACKPACKS
+          </button>
+          <div class="bg-black w-[70%] h-[2px] invisible"></div>
+        </li>
+
+        <!-- Dropdown 2 -->
+        <li
+          id="dropdown"
+          class="absolute w-full bg-white top-[60px] invisible shadow-lg"
         >
-          <li>
-            <a
-              class="mega-item text-[12px] py-4 px-5 tracking-[0.2em] text-white inline-block"
-              href="#"
-              >LUGGAGE</a
-            >
-          </li>
+          <div>
+            <div class="header">
+              <h2>Mega Menu Two</h2>
+            </div>
+            <div class="row">
+              <div class="column">
+                <h3>Category 1</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="column">
+                <h3>Category 2</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+              <div class="column">
+                <h3>Category 3</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </div>
+        </li>
 
-          <li>
-            <a
-              class="mega-item text-[12px] py-4 px-5 tracking-[0.2em] text-white inline-block"
-              href="#"
-              >BAGS AND BACKPACKS</a
-            >
-          </li>
+        <li class="mega-list">
+          <button
+            class="mega-item text-[12px] py-4 px-5 tracking-[0.2em] inline-block"
+          >
+            ACCESSORIES
+          </button>
+          <div class="bg-black w-[70%] h-[2px] invisible"></div>
+        </li>
 
-          <li>
-            <a
-              class="mega-item text-[12px] py-4 px-5 tracking-[0.2em] text-white inline-block"
-              href="#"
-              >ACCESSORIES</a
-            >
-          </li>
+        <li class="mega-list">
+          <button
+            class="mega-item text-[12px] py-4 px-5 tracking-[0.2em] inline-block"
+          >
+            COLLECTIONS
+          </button>
+          <div class="bg-black w-[70%] h-[2px] invisible"></div>
+        </li>
 
-          <li>
-            <a
-              class="mega-item text-[12px] py-4 px-5 tracking-[0.2em] text-white inline-block"
-              href="#"
-              >COLLECTIONS</a
-            >
-          </li>
-
-          <li>
-            <a
-              class="mega-item text-[12px] py-4 px-5 tracking-[0.2em] text-white inline-block"
-              href="#"
-              >ABOUT DELSEY</a
-            >
-          </li>
-        </ul>
-      </header>
-    </div>
+        <li class="mega-list">
+          <button
+            class="mega-item text-[12px] py-4 px-5 tracking-[0.2em] inline-block"
+          >
+            ABOUT DELSEY
+          </button>
+          <div class="bg-black w-[70%] h-[2px] invisible"></div>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+      <p>MAIN</p>
+    </main>
 
     <script type="module" src="/main.js"></script>
   </body>
