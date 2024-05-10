@@ -129,7 +129,7 @@ function setupImageHover(wrapper, image, src) {
 }
 
 function intersectionObserverHeader(cond) {
-  logo.src = cond ? './assets/logoD.avif' : './assets/logo.avif';
+  logo.src = cond ? './assets/logoD.png' : './assets/logo.png';
   cardIcon.src = cond ? './assets/cartD.svg' : './assets/cart.svg';
   logoSection.classList.toggle('!bg-[#FAFAFA]', cond);
   cardText.classList.toggle('!text-black', cond);
