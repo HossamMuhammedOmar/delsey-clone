@@ -25,11 +25,15 @@ export const SOCIAL = [
 ];
 
 export const productOneSrc = {
-  newSrc: 'assets/blueBack.png',
-  originalSrc: 'assets/blueFront.png',
+  newSrc:
+    'https://github.com/HossamMuhammedOmar/delsey-clone/assets/49618856/a30a035a-5137-4f18-803f-0a7c4454bb98',
+  originalSrc:
+    'https://github.com/HossamMuhammedOmar/delsey-clone/assets/49618856/2d8942ff-625e-4f88-9c24-baebb5b3ceac',
 };
 
 export const productTwoSrc = {
-  newSrc: 'assets/purbleBack.png',
-  originalSrc: 'assets/purbleFront.png',
+  newSrc:
+    'https://github.com/HossamMuhammedOmar/delsey-clone/assets/49618856/bf2b4197-70b0-4550-9c1e-67bd81a619b2',
+  originalSrc:
+    'https://github.com/HossamMuhammedOmar/delsey-clone/assets/49618856/f06c8d4a-8ce0-49a3-b48a-38505a2ec366',
 };

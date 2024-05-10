@@ -130,9 +130,11 @@ function setupImageHover(wrapper, image, src) {
 
 function intersectionObserverHeader(cond) {
   logo.src = cond
-    ? 'assets/websiteLogoD.png'
-    : 'assets/websiteLogo.png';
-  cardIcon.src = cond ? 'assets/cartD.svg' : 'assets/cart.svg';
+    ? 'https://github.com/HossamMuhammedOmar/delsey-clone/assets/49618856/5ed58a8f-e6b9-436b-8c04-92b09f4603ba'
+    : 'https://github.com/HossamMuhammedOmar/delsey-clone/assets/49618856/b6ddf2cb-4911-44f3-b129-c91e70be8f60';
+  cardIcon.src = cond
+    ? 'https://github.com/HossamMuhammedOmar/delsey-clone/assets/49618856/c638cb1c-529a-4efd-b858-674b3ed7471a'
+    : 'https://github.com/HossamMuhammedOmar/delsey-clone/assets/49618856/e8850afe-532a-4238-91d2-72b342138520';
   logoSection.classList.toggle('!bg-[#FAFAFA]', cond);
   cardText.classList.toggle('!text-black', cond);
 
