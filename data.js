@@ -28,7 +28,7 @@ export const productOneSrc = {
   newSrc:
     'https://github.com/HossamMuhammedOmar/delsey-clone/assets/49618856/a30a035a-5137-4f18-803f-0a7c4454bb98',
   originalSrc:
-    'https://github.com/HossamMuhammedOmar/delsey-clone/assets/49618856/2d8942ff-625e-4f88-9c24-baebb5b3ceac',
+    'https://github.com/HossamMuhammedOmar/delsey-clone/assets/49618856/b21a492f-1dae-43b7-8527-12edceeea82c',
 };
 
 export const productTwoSrc = {
