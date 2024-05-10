@@ -86,6 +86,12 @@ h6 {
   visibility: visible;
 }
 
+.img-wrapper:hover #product-one-icon {
+  transform: translateY(-50%) translateX(50%);
+  opacity: 1;
+  visibility: visible;
+}
+
 @layer components {
   .link {
     @apply py-3 px-[15px] inline-block text-[13px] cursor-pointer hover:underline;
@@ -97,6 +103,10 @@ h6 {
 
   .mega-heading-link {
     @apply text-[1rem] font-[700] pb-1 cursor-pointer hover:underline tracking-wider;
+  }
+
+  .mega-about-heading-link {
+    @apply text-[17px] font-[700] pb-1 pr-[40px] cursor-pointer hover:underline tracking-wider;
   }
 
   .search-border {

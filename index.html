@@ -19,7 +19,7 @@
   </head>
   <body class="bg-amber-100 relative h-auto">
     <img
-      class="h-[100vh] object-cover w-full absolute z-0"
+      class="h-[100vh] object-cover object-top w-full absolute z-0"
       src="./assets/hero.jpeg"
     />
     <!-- Banner -->
@@ -77,7 +77,7 @@
 
           <form
             id="search"
-            class="bg-white rounded-[40px] flex w-64 relative py-[2px] transition-transform ease duration-200 translate-x-[-40px]"
+            class="bg-white rounded-[40px] flex w-64 relative py-[2px] transition-transform ease duration-200 translate-x-[-60px]"
           >
             <input
               placeholder="Search..."
@@ -131,7 +131,7 @@
         id="mega-menu-wrapper"
         class="flex items-center justify-center pt-2 bg-transparent ease-[cubic-bezier(.18,.77,.58,1)] duration-300 relative"
       >
-        <li tabindex="-1" class="mega-list" id="mega-list-1">
+        <li tabindex="-1" class="mega-list" id="mega-list1">
           <button
             class="mega-item text-[12px] py-4 px-5 tracking-[0.2em] inline-block"
           >
@@ -143,10 +143,10 @@
           <div
             tabindex="-1"
             id="dropdown"
-            class="absolute w-full bg-white top-[60px] right-0 invisible shadow-lg p-10"
+            class="absolute w-full bg-white top-[60px] right-0 invisible shadow-lg p-10 pr-0"
           >
             <div
-              class="flex gap-[10%] translate-y-[-14px] opacity-0 invisible transition duration-400 ease-[cubic-bezier(.18,.77,.58,1)] drop-aimation"
+              class="flex gap-[7%] translate-y-[-10px] transition opacity-0 invisible duration-[400ms] ease-[cubic-bezier(.18,.77,.58,1)] drop-aimation justify-between"
             >
               <div class="flex flex-col pr-10">
                 <a href="#" class="mega-heading-link">Luggages</a>
@@ -172,6 +172,180 @@
                 <a href="#" class="mega-link">1 week</a>
                 <a href="#" class="mega-link">+ 2 weeks</a>
               </div>
+
+              <!-- Product Card -->
+              <div class="pl-1 flex gap-10">
+                <div class="flex flex-col gap-[14px]">
+                  <div
+                    class="bg-[#f6f6f6] p-5 max-w-[165px] flex flex-col gap-[10px] items-center cursor-pointer relative img-wrapper"
+                    id="product-one-wrapper"
+                  >
+                    <div
+                      id="product-one-icon"
+                      class="bg-black opacity-0 invisible p-2 rounded-full absolute top-[0] right-0 translate-x-[50%] translate-y-[-40%] transform duration-[.25s] ease-[cubic-bezier(.29,.65,.58,1)]"
+                    >
+                      <img
+                        src="./assets/plus.svg"
+                        alt="add icon"
+                        width="24px"
+                      />
+                    </div>
+                    <img
+                      id="product-one-image"
+                      src="./assets/blueFront.png"
+                      alt="Product photo"
+                      class="max-h-[205px]"
+                    />
+                    <div class="flex gap-[6px] items-center">
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-blue-900"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div class="w-[8px] h-[8px] bg-black"></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-gray-400"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-purple-400"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-yellow-400"
+                        ></div>
+                      </div>
+                      <small class="font-bold text-[10.5px]"
+                        >+3</small
+                      >
+                    </div>
+                  </div>
+                  <div class="flex justify-between">
+                    <p class="text-[14px] font-semibold text-black">
+                      TURENNE
+                    </p>
+                    <p
+                      class="text-[14px] font-semibold text-black relative mr-[20px] inline-block"
+                    >
+                      499
+                      <sub
+                        class="text-[60%] absolute top-[8px] ml-[2px]"
+                        >00€</sub
+                      >
+                    </p>
+                  </div>
+
+                  <p class="text-[14px] mt-[-10px] text-black">
+                    SUITCASE
+                  </p>
+
+                  <p class="text-[14px] mt-[-10px] text-black">
+                    L (82cm)
+                  </p>
+                </div>
+                <div class="flex flex-col gap-[14px]">
+                  <div
+                    class="bg-[#f6f6f6] p-5 max-w-[165px] flex flex-col gap-[10px] items-center cursor-pointer relative img-wrapper"
+                    id="product-two-wrapper"
+                  >
+                    <div
+                      id="product-one-icon"
+                      class="bg-black opacity-0 invisible p-2 rounded-full absolute top-[0] right-0 translate-x-[50%] translate-y-[-40%] transform duration-[.25s] ease-[cubic-bezier(.29,.65,.58,1)]"
+                    >
+                      <img
+                        src="./assets/plus.svg"
+                        alt="add icon"
+                        width="24px"
+                      />
+                    </div>
+                    <img
+                      id="product-two-image"
+                      src="./assets/purbleFront.png"
+                      alt="Product photo"
+                      class="max-h-[205px] min-w-[118px]"
+                    />
+                    <div class="flex gap-[6px] items-center">
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div class="w-[8px] h-[8px] bg-red-900"></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-gray-200"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-gray-400"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-blue-400"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div class="w-[8px] h-[8px] bg-black"></div>
+                      </div>
+                      <!-- <small class="font-bold text-[10.5px]"
+                        >+3</small
+                      > -->
+                    </div>
+                  </div>
+                  <div class="flex justify-between">
+                    <p class="text-[14px] font-semibold text-black">
+                      SEGUR 2.0
+                    </p>
+                    <p
+                      class="text-[14px] font-semibold text-black relative mr-[20px] inline-block"
+                    >
+                      249
+                      <sub
+                        class="text-[60%] absolute top-[8px] ml-[2px]"
+                        >00€</sub
+                      >
+                    </p>
+                  </div>
+
+                  <p class="text-[14px] mt-[-10px] text-black">
+                    CARRY-ON
+                  </p>
+
+                  <p class="text-[14px] mt-[-10px] text-black">
+                    S (55cm)
+                  </p>
+                </div>
+
+                <img
+                  src="./assets/bgOne.webp"
+                  class="h-[370px]"
+                  alt="Image"
+                />
+              </div>
             </div>
           </div>
         </li>
@@ -183,35 +357,206 @@
             BAGS AND BACKPACKS
           </button>
           <div class="bg-black w-[70%] h-[2px] invisible"></div>
-        </li>
 
-        <!-- Dropdown 2 -->
-        <li
-          id="dropdown"
-          class="absolute w-full bg-white top-[60px] invisible shadow-lg"
-        >
-          <div>
-            <div class="header">
-              <h2>Mega Menu Two</h2>
-            </div>
-            <div class="row">
-              <div class="column">
-                <h3>Category 1</h3>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+          <!-- Dropdown -->
+          <div
+            tabindex="-1"
+            id="dropdown"
+            class="absolute w-full bg-white top-[60px] right-0 invisible shadow-lg p-10 pr-0"
+          >
+            <div
+              class="flex gap-[7%] translate-y-[-10px] opacity-0 invisible transition duration-[400ms] ease-[cubic-bezier(.18,.77,.58,1)] drop-aimation justify-between"
+            >
+              <div class="flex gap-20">
+                <div class="flex flex-col pr-10">
+                  <a href="#" class="mega-heading-link">Bags</a>
+                  <a href="#" class="mega-link">Backpacks</a>
+                  <a href="#" class="mega-link">Laptop Bags</a>
+                  <a href="#" class="mega-link">Duffle Bags</a>
+                  <a href="#" class="mega-link">Clutches</a>
+                  <a href="#" class="mega-link">Pet Carriers</a>
+                </div>
+
+                <div class="flex flex-col pr-10">
+                  <a href="#" class="mega-heading-link">Occasions</a>
+                  <a href="#" class="mega-link">Business</a>
+                  <a href="#" class="mega-link">Daily</a>
+                  <a href="#" class="mega-link">Outdoor</a>
+                </div>
               </div>
-              <div class="column">
-                <h3>Category 2</h3>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-              <div class="column">
-                <h3>Category 3</h3>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+
+              <!-- Product Card -->
+              <div class="pl-1 flex gap-10">
+                <div class="flex flex-col gap-[14px]">
+                  <div
+                    class="bg-[#f6f6f6] p-5 max-w-[165px] flex flex-col gap-[10px] items-center cursor-pointer relative img-wrapper"
+                    id="product-three-wrapper"
+                  >
+                    <div
+                      id="product-one-icon"
+                      class="bg-black opacity-0 invisible p-2 rounded-full absolute top-[0] right-0 translate-x-[50%] translate-y-[-40%] transform duration-[.25s] ease-[cubic-bezier(.29,.65,.58,1)]"
+                    >
+                      <img
+                        src="./assets/plus.svg"
+                        alt="add icon"
+                        width="24px"
+                      />
+                    </div>
+                    <img
+                      id="product-three-image"
+                      src="./assets/blueFront.png"
+                      alt="Product photo"
+                      class="max-h-[205px]"
+                    />
+                    <div class="flex gap-[6px] items-center">
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-blue-900"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div class="w-[8px] h-[8px] bg-black"></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-gray-400"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-purple-400"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-yellow-400"
+                        ></div>
+                      </div>
+                      <small class="font-bold text-[10.5px]"
+                        >+3</small
+                      >
+                    </div>
+                  </div>
+                  <div class="flex justify-between">
+                    <p class="text-[14px] font-semibold text-black">
+                      TURENNE
+                    </p>
+                    <p
+                      class="text-[14px] font-semibold text-black relative mr-[20px] inline-block"
+                    >
+                      499
+                      <sub
+                        class="text-[60%] absolute top-[8px] ml-[2px]"
+                        >00€</sub
+                      >
+                    </p>
+                  </div>
+
+                  <p class="text-[14px] mt-[-10px] text-black">
+                    SUITCASE
+                  </p>
+
+                  <p class="text-[14px] mt-[-10px] text-black">
+                    L (82cm)
+                  </p>
+                </div>
+                <div class="flex flex-col gap-[14px]">
+                  <div
+                    class="bg-[#f6f6f6] p-5 max-w-[165px] flex flex-col gap-[10px] items-center cursor-pointer relative img-wrapper"
+                    id="product-four-wrapper"
+                  >
+                    <div
+                      id="product-one-icon"
+                      class="bg-black opacity-0 invisible p-2 rounded-full absolute top-[0] right-0 translate-x-[50%] translate-y-[-40%] transform duration-[.25s] ease-[cubic-bezier(.29,.65,.58,1)]"
+                    >
+                      <img
+                        src="./assets/plus.svg"
+                        alt="add icon"
+                        width="24px"
+                      />
+                    </div>
+                    <img
+                      id="product-four-image"
+                      src="./assets/purbleFront.png"
+                      alt="Product photo"
+                      class="max-h-[205px] min-w-[118px]"
+                    />
+                    <div class="flex gap-[6px] items-center">
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div class="w-[8px] h-[8px] bg-red-900"></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-gray-200"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-gray-400"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-blue-400"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div class="w-[8px] h-[8px] bg-black"></div>
+                      </div>
+                      <!-- <small class="font-bold text-[10.5px]"
+                       >+3</small
+                     > -->
+                    </div>
+                  </div>
+                  <div class="flex justify-between">
+                    <p class="text-[14px] font-semibold text-black">
+                      SEGUR 2.0
+                    </p>
+                    <p
+                      class="text-[14px] font-semibold text-black relative mr-[20px] inline-block"
+                    >
+                      249
+                      <sub
+                        class="text-[60%] absolute top-[8px] ml-[2px]"
+                        >00€</sub
+                      >
+                    </p>
+                  </div>
+
+                  <p class="text-[14px] mt-[-10px] text-black">
+                    CARRY-ON
+                  </p>
+
+                  <p class="text-[14px] mt-[-10px] text-black">
+                    S (55cm)
+                  </p>
+                </div>
+
+                <img
+                  src="./assets/bg2.webp"
+                  class="h-[370px]"
+                  alt="Image"
+                />
               </div>
             </div>
           </div>
@@ -224,6 +569,211 @@
             ACCESSORIES
           </button>
           <div class="bg-black w-[70%] h-[2px] invisible"></div>
+
+          <!-- Dropdown -->
+          <div
+            tabindex="-1"
+            id="dropdown"
+            class="absolute w-full bg-white top-[60px] right-0 invisible shadow-lg p-10 pr-0"
+          >
+            <div
+              class="flex gap-1 translate-y-[-10px] opacity-0 invisible transition duration-[400ms] ease-[cubic-bezier(.18,.77,.58,1)] drop-aimation justify-between"
+            >
+              <div class="flex gap-16">
+                <div class="flex flex-col pr-10">
+                  <a href="#" class="mega-heading-link">Essentials</a>
+                </div>
+
+                <div class="flex flex-col pr-10">
+                  <a href="#" class="mega-heading-link">Storage</a>
+                </div>
+
+                <div class="flex flex-col pr-10">
+                  <a href="#" class="mega-heading-link">Padlocks</a>
+                </div>
+
+                <div class="flex flex-col pr-10">
+                  <a href="#" class="mega-heading-link"
+                    >Toiletry bags</a
+                  >
+                </div>
+              </div>
+
+              <!-- Product Card -->
+              <div class="pl-1 flex gap-10">
+                <div class="flex flex-col gap-[14px]">
+                  <div
+                    class="bg-[#f6f6f6] p-5 max-w-[165px] flex flex-col gap-[10px] items-center cursor-pointer relative img-wrapper"
+                    id="product-five-wrapper"
+                  >
+                    <div
+                      id="product-one-icon"
+                      class="bg-black opacity-0 invisible p-2 rounded-full absolute top-[0] right-0 translate-x-[50%] translate-y-[-40%] transform duration-[.25s] ease-[cubic-bezier(.29,.65,.58,1)]"
+                    >
+                      <img
+                        src="./assets/plus.svg"
+                        alt="add icon"
+                        width="24px"
+                      />
+                    </div>
+                    <img
+                      id="product-five-image"
+                      src="./assets/blueFront.png"
+                      alt="Product photo"
+                      class="max-h-[205px]"
+                    />
+                    <div class="flex gap-[6px] items-center">
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-blue-900"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div class="w-[8px] h-[8px] bg-black"></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-gray-400"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-purple-400"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-yellow-400"
+                        ></div>
+                      </div>
+                      <small class="font-bold text-[10.5px]"
+                        >+3</small
+                      >
+                    </div>
+                  </div>
+                  <div class="flex justify-between">
+                    <p class="text-[14px] font-semibold text-black">
+                      TURENNE
+                    </p>
+                    <p
+                      class="text-[14px] font-semibold text-black relative mr-[20px] inline-block"
+                    >
+                      499
+                      <sub
+                        class="text-[60%] absolute top-[8px] ml-[2px]"
+                        >00€</sub
+                      >
+                    </p>
+                  </div>
+
+                  <p class="text-[14px] mt-[-10px] text-black">
+                    SUITCASE
+                  </p>
+
+                  <p class="text-[14px] mt-[-10px] text-black">
+                    L (82cm)
+                  </p>
+                </div>
+                <div class="flex flex-col gap-[14px]">
+                  <div
+                    class="bg-[#f6f6f6] p-5 max-w-[165px] flex flex-col gap-[10px] items-center cursor-pointer relative img-wrapper"
+                    id="product-six-wrapper"
+                  >
+                    <div
+                      id="product-one-icon"
+                      class="bg-black opacity-0 invisible p-2 rounded-full absolute top-[0] right-0 translate-x-[50%] translate-y-[-40%] transform duration-[.25s] ease-[cubic-bezier(.29,.65,.58,1)]"
+                    >
+                      <img
+                        src="./assets/plus.svg"
+                        alt="add icon"
+                        width="24px"
+                      />
+                    </div>
+                    <img
+                      id="product-six-image"
+                      src="./assets/purbleFront.png"
+                      alt="Product photo"
+                      class="max-h-[205px] min-w-[118px]"
+                    />
+                    <div class="flex gap-[6px] items-center">
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div class="w-[8px] h-[8px] bg-red-900"></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-gray-200"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-gray-400"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div
+                          class="w-[8px] h-[8px] bg-blue-400"
+                        ></div>
+                      </div>
+                      <div
+                        class="bg-white border border-[#b6b6b6] p-[2px]"
+                      >
+                        <div class="w-[8px] h-[8px] bg-black"></div>
+                      </div>
+                      <!-- <small class="font-bold text-[10.5px]"
+                       >+3</small
+                     > -->
+                    </div>
+                  </div>
+                  <div class="flex justify-between">
+                    <p class="text-[14px] font-semibold text-black">
+                      SEGUR 2.0
+                    </p>
+                    <p
+                      class="text-[14px] font-semibold text-black relative mr-[20px] inline-block"
+                    >
+                      249
+                      <sub
+                        class="text-[60%] absolute top-[8px] ml-[2px]"
+                        >00€</sub
+                      >
+                    </p>
+                  </div>
+
+                  <p class="text-[14px] mt-[-10px] text-black">
+                    CARRY-ON
+                  </p>
+
+                  <p class="text-[14px] mt-[-10px] text-black">
+                    S (55cm)
+                  </p>
+                </div>
+
+                <img
+                  src="./assets/bg3.webp"
+                  class="h-[370px]"
+                  alt="Image"
+                />
+              </div>
+            </div>
+          </div>
         </li>
 
         <li class="mega-list">
@@ -233,6 +783,75 @@
             COLLECTIONS
           </button>
           <div class="bg-black w-[70%] h-[2px] invisible"></div>
+
+          <!-- Dropdown -->
+          <div
+            tabindex="-1"
+            id="dropdown"
+            class="absolute w-full bg-white top-[60px] right-0 invisible shadow-lg p-10 pr-0"
+          >
+            <div
+              class="flex gap-[7%] translate-y-[-10px] opacity-0 invisible transition duration-[400ms] ease-[cubic-bezier(.18,.77,.58,1)] drop-aimation justify-between"
+            >
+              <div class="flex flex-col gap-10">
+                <div class="flex gap-20">
+                  <div class="flex flex-col pr-10">
+                    <a href="#" class="mega-heading-link">Iconic</a>
+                    <a href="#" class="mega-link">Chatelet Air 2.0</a>
+                    <a href="#" class="mega-link">Peugeot Voyages</a>
+                    <a href="#" class="mega-link">Shadow 5.0</a>
+                    <a href="#" class="mega-link">The Iconic</a>
+                    <a href="#" class="mega-link">Turenne</a>
+                    <a href="#" class="mega-link">Rempart</a>
+                    <a href="#" class="mega-link">Saint Tropez</a>
+                  </div>
+
+                  <div class="flex flex-col pr-10">
+                    <a href="#" class="mega-heading-link">Hardside</a>
+                    <a href="#" class="mega-link">Belmont Plus</a>
+                    <a href="#" class="mega-link">Clavel</a>
+                    <a href="#" class="mega-link">Moncey</a>
+                    <a href="#" class="mega-link">Securitime Zip</a>
+                    <a href="#" class="mega-link">Segur 2.0</a>
+                    <a href="#" class="mega-link">Shadow 5.0</a>
+                  </div>
+
+                  <div class="flex flex-col pr-10">
+                    <a href="#" class="mega-heading-link">Softside</a>
+                    <a href="#" class="mega-link">Brochant 2.0</a>
+                    <a href="#" class="mega-link">Helium DLX</a>
+                    <a href="#" class="mega-link">Maubert 2.0</a>
+                    <a href="#" class="mega-link"
+                      >Montmartre Air 2.0</a
+                    >
+                    <a href="#" class="mega-link">Raspail</a>
+                    <a href="#" class="mega-link">Sky Max 2.0</a>
+                  </div>
+                </div>
+
+                <div class="flex flex-col pr-10">
+                  <a href="#" class="mega-heading-link"
+                    >Collaborations</a
+                  >
+                  <a href="#" class="mega-link"
+                    >DELSEY PARIS x Roland Garros</a
+                  >
+                  <a href="#" class="mega-link"
+                    >DELSEY PARIS x Air France</a
+                  >
+                </div>
+              </div>
+
+              <!-- Product Card -->
+              <div class="pl-1 flex gap-10">
+                <img
+                  src="./assets/bg2.webp"
+                  class="h-[370px]"
+                  alt="Image"
+                />
+              </div>
+            </div>
+          </div>
         </li>
 
         <li class="mega-list">
@@ -242,6 +861,38 @@
             ABOUT DELSEY
           </button>
           <div class="bg-black w-[70%] h-[2px] invisible"></div>
+
+          <!-- Dropdown -->
+          <div
+            tabindex="-1"
+            id="dropdown"
+            class="absolute w-full bg-white top-[60px] right-0 invisible shadow-lg p-10 pr-0"
+          >
+            <div
+              class="flex gap-[7%] translate-y-[-10px] opacity-0 invisible transition duration-[400ms] ease-[cubic-bezier(.18,.77,.58,1)] drop-aimation justify-between"
+            >
+              <div class="flex gap-10 w-[50%] flex-wrap">
+                <a href="#" class="mega-about-heading-link"
+                  >Our History</a
+                >
+                <a href="#" class="mega-about-heading-link"
+                  >Our Values</a
+                >
+                <a href="#" class="mega-about-heading-link"
+                  >DELSEY Innovations</a
+                >
+                <a href="#" class="mega-about-heading-link"
+                  >Our CSR approach</a
+                >
+                <a href="#" class="mega-about-heading-link"
+                  >Travel Blog</a
+                >
+                <a href="#" class="mega-about-heading-link"
+                  >Sound of Design</a
+                >
+              </div>
+            </div>
+          </div>
         </li>
       </ul>
     </header>

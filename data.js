@@ -23,3 +23,13 @@ export const SOCIAL = [
     url: 'https://www.linkedin.com/',
   },
 ];
+
+export const productOneSrc = {
+  newSrc: './assets/blueBack.png',
+  originalSrc: './assets/blueFront.png',
+};
+
+export const productTwoSrc = {
+  newSrc: './assets/purbleBack.png',
+  originalSrc: './assets/purbleFront.png',
+};

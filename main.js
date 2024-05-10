@@ -1,4 +1,9 @@
-import { NAV_LINKS, SOCIAL } from './data';
+import {
+  NAV_LINKS,
+  SOCIAL,
+  productOneSrc,
+  productTwoSrc,
+} from './data';
 
 const navList = document.querySelector('#nav-list');
 const socialList = document.querySelector('#social-list');
@@ -18,8 +23,37 @@ const toggleMiddleIcon = document.querySelector(
 const toggleBottomIcon = document.querySelector(
   '#toggle-bottom-icon'
 );
-const dropdownToggle = document.querySelector('.mega-list');
-const dropdown = document.querySelector('#dropdown');
+
+const productOneImage = document.querySelector('#product-one-image');
+const productOneWrapper = document.querySelector(
+  '#product-one-wrapper'
+);
+const productTwoImage = document.querySelector('#product-two-image');
+const productTwoWrapper = document.querySelector(
+  '#product-two-wrapper'
+);
+const productThreeImage = document.querySelector(
+  '#product-three-image'
+);
+const productThreeWrapper = document.querySelector(
+  '#product-three-wrapper'
+);
+const productFourImage = document.querySelector(
+  '#product-four-image'
+);
+const productFourWrapper = document.querySelector(
+  '#product-four-wrapper'
+);
+const productFiveImage = document.querySelector(
+  '#product-five-image'
+);
+const productFiveWrapper = document.querySelector(
+  '#product-five-wrapper'
+);
+const productSixImage = document.querySelector('#product-six-image');
+const productSixWrapper = document.querySelector(
+  '#product-six-wrapper'
+);
 
 const items = [];
 const icons = [];
@@ -72,6 +106,27 @@ SOCIAL.forEach(social => {
 
 navList.append(...items);
 socialList.append(...icons);
+
+setupImageHover(productOneWrapper, productOneImage, productOneSrc);
+setupImageHover(productTwoWrapper, productTwoImage, productTwoSrc);
+setupImageHover(
+  productThreeWrapper,
+  productThreeImage,
+  productOneSrc
+);
+setupImageHover(productFourWrapper, productFourImage, productTwoSrc);
+setupImageHover(productFiveWrapper, productFiveImage, productOneSrc);
+setupImageHover(productSixWrapper, productSixImage, productTwoSrc);
+
+function setupImageHover(wrapper, image, src) {
+  wrapper.addEventListener('mouseenter', () => {
+    image.src = src.newSrc;
+  });
+
+  wrapper.addEventListener('mouseleave', () => {
+    image.src = src.originalSrc;
+  });
+}
 
 function intersectionObserverHeader(cond) {
   logo.src = cond ? './assets/logoD.avif' : './assets/logo.avif';
