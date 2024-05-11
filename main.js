@@ -4,6 +4,10 @@ import {
   productOneSrc,
   productTwoSrc,
 } from './data';
+import websiteLogo from './assets/logoD.avif';
+import websiteLogoD from './assets/logo.avif';
+import cartD from './assets/cartD.svg';
+import cart from './assets/cart.svg';
 
 const navList = document.querySelector('#nav-list');
 const socialList = document.querySelector('#social-list');
@@ -129,8 +133,8 @@ function setupImageHover(wrapper, image, src) {
 }
 
 function intersectionObserverHeader(cond) {
-  logo.src = cond ? './assets/logoD.avif' : './assets/logo.avif';
-  cardIcon.src = cond ? './assets/cartD.svg' : './assets/cart.svg';
+  logo.src = cond ? websiteLogo : websiteLogoD;
+  cardIcon.src = cond ? cartD : cart;
   logoSection.classList.toggle('!bg-[#FAFAFA]', cond);
   cardText.classList.toggle('!text-black', cond);
 

@@ -1,3 +1,8 @@
+import blueBack from './assets/blueBack.png';
+import blueFront from './assets/blueFront.png';
+import brownBack from './assets/brownBack.png';
+import brownFront from './assets/brownFront.png';
+
 export const NAV_LINKS = [
   'Shipping and Returns',
   'Track my Order',
@@ -25,11 +30,11 @@ export const SOCIAL = [
 ];
 
 export const productOneSrc = {
-  newSrc: 'assets/blueBack.png',
-  originalSrc: 'assets/blueFront.png',
+  newSrc: blueBack,
+  originalSrc: blueFront,
 };
 
 export const productTwoSrc = {
-  newSrc: 'assets/brownBack.png',
-  originalSrc: 'assets/brownFront.png',
+  newSrc: brownBack,
+  originalSrc: brownFront,
 };
